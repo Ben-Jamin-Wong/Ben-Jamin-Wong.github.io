@@ -303,8 +303,8 @@
         let tomorroww=tomorrow().split(' ')[0]
         let yesterdayy=yesterday().split(' ')[0]
         if(date.getHours()>4){
-            dateLine.innerHTML=today+" 08:30 至 "+tomorroww+" 03:30"
-        }else{dateLine.innerHTML=yesterdayy+" 08:30 至 "+today+" 03:30"}
+            dateLine.innerHTML=today+" 06:00 至 "+tomorroww+" 02:50"
+        }else{dateLine.innerHTML=yesterdayy+" 06:00 至 "+today+" 02:50"}
 
         //生成背景
         let a = today
@@ -342,6 +342,18 @@
 
         document.getElementById('3').style.background = "url(" + b.toDataURL("image/png") + ") left top repeat";
 
+        document.getElementById('4').style.background = "url(" + b.toDataURL("image/png") + ") left top repeat";
+
+        document.getElementById('5').style.background = "url(" + b.toDataURL("image/png") + ") left top repeat";
+
+        document.getElementById('6').style.background = "url(" + b.toDataURL("image/png") + ") left top repeat";
+
+        document.getElementById('7').style.background = "url(" + b.toDataURL("image/png") + ") left top repeat";
+
+        document.getElementById('8').style.background = "url(" + b.toDataURL("image/png") + ") left top repeat";
+
+        document.getElementById('9').style.background = "url(" + b.toDataURL("image/png") + ") left top repeat";
+                                                
         let t = document.getElementsByClassName('title h60')[0];
         t.classList.replace('red', 'green');
         t.getElementsByTagName('span')[0].innerText = '可通行';
